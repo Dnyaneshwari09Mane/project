@@ -1,0 +1,12 @@
+.container{ 
+    background-color:rgb(12, 127, 172);
+    display:flex;
+    flex-direction: row;
+    justify-content:left;
+    width:16cm ;
+}
+.D{ 
+   color: white;
+   padding: 20px;
+   font-size: 25px;
+}

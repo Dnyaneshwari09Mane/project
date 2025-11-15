@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    none;
+    * {box-sizing:border-box}
+</style>
+<body>
+    <div class="nav">
+        <ul1>
+            <i><li><class="st">Shraddha's Artistry</li></i>
+        </ul1>
+        <i><ul>
+            <li><a href="1stpage.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="feature.html">Feature</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            </ul></i>
+        </div><br><br>
+        <div>
+          <div>
+            <i><p style="font-size:1cm;text-align: center;text-decoration: underline; position:absolute;top:1.4cm;left:18cm">About-Us</p></i>
+        <h2 style="font-size: 1.5cm;">We Provide Solutions For Your Questions...</h2>
+        <h1 style="margin-left:30px;">Miss Ingulkar</h1>
+         <div class="info1"><i><b><p>I'm Shraddha, and I'm absolutely thrilled to have 
+          you here on my photography journey.Based in the picturesque city of Satara, Maharashtra, India, I've always been enchanted by the mesmerizing beauty that surrounds us. From the breathtaking landscapes to the genuineemotions captured in single frame, photography has become my way of expressing the world's wonders.
+
+          With every click of my camera, I aim to freeze those fleeting moments and transform them into timeless memories. Whether it's 
+          the vibrant colors of nature, the candid smiles of loved ones, or the intricate details of everyday life, I'm dedicated to 
+          capturing the essence of every subjectI encounter.hrough the lens, I strive to tell captivating stories that evoke emotions 
+          and transport you to another world.
+          
+          So join me on this visualadventure as we embark  on a journey of exploration and discovery. Together, let's celebrate the 
+          beauty of life, one frame at a time. Thank you for being a part of my photography passion!</p></b></i>
+            <img src="profilepic.jpg" style="height:10cm;width:10cm;position:absolute;right:2cm;top:8cm;border-radius: 200px;"><br><br>
+        </div>   
+        </div>
+       
+        </div>
+      <div>
+        <img class="tree" src="tree.jpg" style="background-color:yellow; opacity: 0.3;">
+      </div>
+      <div>
+        <img class="lake" src="lake.jpg" style="background-color:black; opacity: 0.3;">
+      </div>
+        <div>
+          <center><h1>Explore More</h1></center>
+          <b><i><p style="font-size:25px;">"Welcome to the enchanting world of Shraddha Artistry, where nature's beauty dances through the lens of our camera! Immerse yourself in a visual symphony of breathtaking landscapes, vibrant wildlife, and serene moments captured in time. Each photograph is a brushstroke of Mother Nature's masterpiece, lovingly crafted to evoke wonder and awe. Join us on this artistic journey, where every click tells a story, and every image whispers the secrets of the natural world. Let Shraddha Artistry be your window to the soul of nature. Explore, dream, and discover the magic of our planet through the lens of our artistry."</p></i></b>
+          </div>
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 9</div>
+          <img id="SI" src="1.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 9</div>
+          <img id="SI" src="2.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 9</div>
+          <img  id="SI" src="3.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 9</div>
+            <img id="SI" src="4.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 9</div>
+            <img id="SI" src="5.jpg" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 9</div>
+            <img id="SI" src="6.jpg" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 9</div>
+            <img id="SI" src="7.jpg" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 9</div>
+            <img id="SI" src="8.jpg" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 9</div>
+            <img id="SI" src="10.jpg" style="width:100%">
+          </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+      </div>
+      <script>
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+      </script>
+</body>
+</html>
